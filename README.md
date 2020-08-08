@@ -1,54 +1,54 @@
-"# ttt-terriblytinytales" 
-# react-express-frequency-computation-app
+# ttt-terriblytinytales
 
-
-> Frequency computation app built with react and nodejs
-
-### Deployed On Heroku: [Deployed app](https://frequency-computation-rne.herokuapp.com/)
+> Frequency computation app built by using Django and html
 
 ## Usage
 
-Install [nodemon](https://github.com/remy/nodemon) globally
+Insatll [python](https://www.python.org/) and other essentials
+```
+apt-get install python3
+apt-get install python3-pip
+pip3 install virtualenv
 
 ```
-npm i nodemon -g
-```
 
-Install server and client dependencies
 
-```
-yarn
-cd client
-yarn
-```
-
-To start the server and client at the same time (from the root of the project)
+Install [Django](https://docs.djangoproject.com/en/3.0/topics/install/) 
 
 ```
-yarn dev
-```
-
-Running the production build on localhost. This will create a production build, then Node will serve the app on http://localhost:5000
-
-```
-NODE_ENV=production yarn dev:server
-```
-
-## How this works
-
-The key to use an Express backend with a project created with `create-react-app` is on using a **proxy**. We have a _proxy_ entry in `client/package.json`
+cd ~
+mkdir django-apps
+cd django-apps
+virtualenv env
+source env/bin/activate
+pip install django
 
 ```
-"proxy": "http://localhost:5000/"
+
+Config Django
+
+```
+cd ~/django-apps
+django-admin startproject mysite
 ```
 
-This tells Webpack development server to proxy our API requests to our API server, given that our Express server is running on **localhost:5000**
+Confirm that debug mode is enabled: `DEBUG = True`
 
+Locate the ALLOWED_HOSTS line and then modify xxx.xxx.xxx.xxx with the IP address of your server `ALLOWED_HOST =["XXXX.XXXX.XXXX.XXXX"]`
 
-[Deployed app](https://frequency-computation-rne.herokuapp.com/)
+To start the server 
+
+```
+python manage.py runserver
+```
+
+After running sever the project will be host on the given ip in your terminal {Ex: 127.0.0.1:8XXX / local host}
+
+```
+Use requirement.txt to use all the library for this project
+```
+
 
 ## Giving Back
 
-[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/black_img.png)](https://www.buymeacoffee.com/patidarparas13)
-
-- patidarparas13
+- sanyamkarnawat
