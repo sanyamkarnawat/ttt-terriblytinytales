@@ -1,0 +1,43 @@
+.cards{
+	background-color: lightblue;
+  display: flex;
+  flex-wrap: wrap;
+
+	padding: 5px;
+	border: 1px solid black;
+	width: 320px;
+	height: 100%;
+    margin: auto;
+}
+
+.image{
+
+	margin: 3px;
+	border: 1px solid black;
+	
+	width: 100%px;
+  height: 100%;
+}
+h3{
+	text-align: center;
+	margin: 0px;
+	font-size: 30px;
+}
+img{
+	width: 300px;
+	height: 300px;
+	padding: 5px;
+}
+.content{
+	margin: 5px;
+	padding: 5px;
+	width: 300px;
+	height: 100%;
+	border: 1px solid black; 
+}
+#heading{
+	font-style: italic;
+}
+.items{
+	list-style: none;
+}

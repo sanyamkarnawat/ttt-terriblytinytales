@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--result page-->
+  <title>ttt</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+  body {
+    background-color: #f2f2f2;
+  }
+  h2{
+    text-align: center;
+    margin: 0px;
+    font-size: 40px;
+}
+h4{
+  text-align: center;
+  margin: 0px;
+  font-size: 24px;
+}
+  </style>
+<body>
+
+<div class="container">
+  <!--table creation to show the most frequent words-->
+  <h2><p>The N most frequent words</p></h2><br>
+  <h4><p>This <a href="https://terriblytinytales.com/test.txt">site</a> was used for the calculation</p></h4>
+          
+  <table class="table table-striped">
+    <thead>
+        <tr>
+          <th>Words</th>
+          <th>Count</th>
+        </tr>
+      </thead>
+{% for res in result %}
+<tr>
+<td>{{ res.0 }}</td>
+<td>
+{{ res.1 }}</td>
+
+</tr>
+{% endfor %}
+</table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>ttt</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <!--front end of the webpage-->
+    <style>
+        .cards{
+            background-color: #333333;
+          display: flex;
+          flex-wrap: wrap;
+        
+            padding: 5px;
+            border: 1px solid black;
+            width: 320px;
+            height: 100%;
+            margin: auto;
+        }
+        
+        h2{
+            text-align: center;
+            margin: 0px;
+            font-size: 40px;
+        }
+        h4{
+            text-align: center;
+            margin: 0px;
+            font-size: 25px;
+        }
+        img{
+            width: 300px;
+            height: 300px;
+            padding: 5px;
+            margin: 3px;
+            border: 1px solid black;
+        }
+        .content{
+            margin: 5px;
+            padding: 5px;
+            width: 300px;
+            height: 100%;
+            border: 1px solid black; 
+        }
+        
+        .items{
+            list-style: none;
+        }
+        
+    </style>
+<body>
+    <div class="cards">
+		<div class="image ">
+            <h2><em>terribly tiny tales</em></h2><br>
+            <h4>created by <b>sanyam </b> <a href="https://www.linkedin.com/in/sanyam-karnawat-978399170/"><i class="fa fa-linkedin"></i></a></h4>
+            
+			<img src="https://terriblytinytales.com/img/typing.png" alt="typewriter">
+        </div>
+
+        <!--this will send value to the views.py for backend operation-->
+            <form action="add">
+                
+                    <h1>enter the value:</h1> 
+                    <input type="text" name="num"><br>
+            
+                <input type="submit">   
+            </form>
+        
+     </div>   
+
+</body >
+</html>
